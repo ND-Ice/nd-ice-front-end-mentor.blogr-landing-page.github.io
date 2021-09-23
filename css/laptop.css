@@ -1,0 +1,41 @@
+.laptop__page {
+  padding: 4rem;
+  margin-top: 10rem;
+}
+.content__container {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.hero__container {
+  position: relative;
+}
+
+.laptop__image {
+  width: 100%;
+}
+
+.laptop__image--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .laptop__page {
+    padding: 18rem;
+  }
+
+  .content__container {
+    text-align: left;
+  }
+
+  .laptop__image--mobile {
+    display: none;
+  }
+
+  .laptop__image--desktop {
+    display: block;
+    position: absolute;
+    transform: scale(1.7);
+    left: -40%;
+  }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600;700;800&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/designed.css" />
+    <link rel="stylesheet" href="css/phone.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <main>
+      <section class="landing__page">
+        <!-- ================== navbar ================ -->
+        <nav class="nav">
+          <div class="nav__left">
+            <a class="brand" href="">Blogr</a>
+            <div class="link__container">
+              <div class="nav__dropdowns">
+                <div class="collapsible">
+                  <span class="collapsible__title">Product</span>
+                  <div class="collapsible__content"></div>
+                </div>
+                <div class="collapsible">
+                  <span class="collapsible__title">Company</span>
+                  <div class="collapsible__content"></div>
+                </div>
+                <div class="collapsible collapsible--connect">
+                  <span class="collapsible__title connect">Connect </span>
+                  <div class="collapsible__content connect__content">
+                    <ul class="collapsible__list">
+                      <li class="collapsible__item">Contact</li>
+                      <li class="collapsible__item">Newsletter</li>
+                      <li class="collapsible__item">LinkdIn</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__auth">
+                <a class="link__btn" href="#">Login</a>
+                <a class="link__btn link__btn--active" href="#">Signup</a>
+              </div>
+            </div>
+          </div>
+          <span class="nav__toggler">
+            <svg
+              class="nav__toggler--open"
+              width="32"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="#FFF" fill-rule="evenodd">
+                <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+              </g>
+            </svg>
+            <svg
+              class="nav__toggler--close"
+              width="26"
+              height="26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z"
+                fill="#FFF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </nav>
+        <img class="hero__image" src="images/bg-pattern-intro.svg" alt="" />
+        <div class="landing__content container--shade">
+          <h1 class="landing__heading">A modern publishing platform</h1>
+          <p class="landing__desc">
+            Grow your audience and build your online brand
+          </p>
+          <div class="btn__container">
+            <a
+              class="link__btn link__btn--active btn--landing btn--start"
+              href="#"
+              >Start for Free</a
+            >
+            <a class="link__btn btn--landing btn--learn" href="#">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <section class="product__page">
+        <h2>Designed for the future</h2>
+        <div
+          class="product__container product__container--reverse grid grid--1x2"
+        >
+          <div class="content-image__wrapper">
+            <img
+              class="product__image product__image--mobile"
+              src="images/illustration-editor-mobile.svg"
+              alt=""
+            />
+            <img
+              class="product__image product__image--desktop"
+              src="images/illustration-editor-desktop.svg"
+              alt=""
+            />
+          </div>
+          <div class="product__content">
+            <div class="content__wrapper">
+              <h3 class="content__heading">Introducing an extensible editor</h3>
+              <p class="content__desc">
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: create content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                emblems such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of the blog.
+              </p>
+            </div>
+            <div class="content__wrapper">
+              <h3 class="content__heading">Robust content management</h3>
+              <p class="content__desc">
+                Flexible content management enables users to move through posts.
+                Increase the usability of you blog by adding customized
+                categories, sectios, format, or flow. With this functionality,
+                you're in full control.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="phone__page">
+        <div class="phone__container grid grid--1x2">
+          <div class="hero__container">
+            <img
+              class="hero__phone"
+              src="images/illustration-phones.svg"
+              alt=""
+            />
+          </div>
+          <div class="phone__content container--shade">
+            <h2>State of the Art infrastructure</h2>
+            <p>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for the ultra-fast connectivity. This ensures your
+              site will load instantly, no matter where your readers are,
+              keeping your site competitive.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="laptop__page">
+        <div class="grid grid--1x2">
+          <div class="hero__container">
+            <img
+              class="laptop__image laptop__image--mobile"
+              src="images/illustration-laptop-mobile.svg"
+              alt=""
+            />
+            <img
+              class="laptop__image laptop__image--desktop"
+              src="images/illustration-laptop-desktop.svg"
+              alt=""
+            />
+          </div>
+          <div class="laptop__content">
+            <div class="content__container">
+              <h3>Free, Open, Smile</h3>
+              <p>
+                Blogr is a free opensource application backed by large community
+                of helpful developers. it supports features such as code
+                highlighting, RSS feeds, social media integration. third-party
+                commenting tools, and work seemlessly with goo analytics. The
+                architecture is clean and is relatively easy to learn.
+              </p>
+            </div>
+            <div class="content__container">
+              <h3>Powerful tooling</h3>
+              <p>
+                Batteries included. we built a simple and straitforward CLI tool
+                that make customization and deployment a breeze, but capable of
+                producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="brand" href="#">Blogr</a>
+      <div class="footer__section">
+        <span class="footer__heading">Product</span>
+        <ul class="footer__list">
+          <li class="footer__item">Overview</li>
+          <li class="footer__item">Pricing</li>
+          <li class="footer__item">Marketplace</li>
+          <li class="footer__item">Features</li>
+          <li class="footer__item">Integration</li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <span class="footer__heading">Product</span>
+        <ul class="footer__list">
+          <li class="footer__item">Overview</li>
+          <li class="footer__item">Pricing</li>
+          <li class="footer__item">Marketplace</li>
+          <li class="footer__item">Features</li>
+          <li class="footer__item">Integration</li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <span class="footer__heading">Product</span>
+        <ul class="footer__list">
+          <li class="footer__item">Overview</li>
+          <li class="footer__item">Pricing</li>
+          <li class="footer__item">Marketplace</li>
+          <li class="footer__item">Features</li>
+          <li class="footer__item">Integration</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

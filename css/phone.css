@@ -1,0 +1,53 @@
+:root {
+  /* primary */
+  --clr-light-red: hsl(356, 100%, 66%);
+  --clr-very-light-red: hsl(355, 100%, 74%);
+  --clr-very-dark-blue: hsl(208, 49%, 24%);
+
+  /* neutral */
+
+  --clr-white-txt: hsl(0, 0%, 100%);
+  --clr-grayish-blue: hsl(240, 2%, 79%);
+  --clr-very-dark-grayish-blue: hsl(180, 1%, 14%);
+  --clr-very-dark-black-blue: hsl(240, 10%, 16%);
+}
+
+.phone__page {
+  background: #3a3d5c;
+  border-top-right-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+  padding: 10rem 4rem;
+  margin-top: 8rem;
+}
+
+.phone__content {
+  text-align: center;
+  margin-top: 17rem;
+}
+
+.phone__content > p {
+  color: var(--clr-white-txt);
+  line-height: 1.8;
+}
+
+.hero__container {
+  position: relative;
+}
+
+.hero__phone {
+  width: 100%;
+  position: absolute;
+  top: -24rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .phone__content {
+    margin-top: 0;
+    padding: 5rem;
+    text-align: left;
+  }
+
+  .hero__phone {
+    top: -23rem;
+  }
+}
